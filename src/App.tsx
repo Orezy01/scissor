@@ -6,6 +6,7 @@ import Pricing from "./pages/Pricing";
 // import Analytics from "./pages/Analytics";
 import Faq from "./pages/Faq";
 import Footer from "./components/Footer";
+import Login from "./components/Login";
 // import LearnMore from "./pages/LearnMore";
 
 // import { motion } from "framer-motion";
@@ -21,6 +22,7 @@ function App() {
         <Pricing />
         {/* <Analytics /> */}
         <Faq />
+        <Login />
         <Footer /> 
       </Layout>
     </main>

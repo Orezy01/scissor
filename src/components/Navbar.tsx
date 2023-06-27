@@ -1,6 +1,7 @@
 
 import {motion} from "framer-motion"
-import NavLogo from "../images/Logo.png"
+import NavLogo from "../images/Logo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -14,41 +15,52 @@ const Navbar = () => {
             </nav>
 
             <nav>
-              <a 
-              href="#myurls" 
-               
+              <Link 
+              to="myurls" 
+              spy={true}  
+              smooth={true}
               
-               
-                
-              className="mr-4 text-blue-500">
+              className="mr-4 text-blue-500 cursor-pointer">
                 My URLs
-              </a>
-              <a  
-              
-              href="#features" className="mx-4">
+              </Link>
+              <Link
+              spy={true}  
+              smooth={true}
+              to="features" className="mx-4 cursor-pointer">
                 Features
-              </a>
-              <a 
+              </Link>
+              <Link 
               
-              href="#pricing" className="mx-4">
+              to="pricing"
+              spy={true}  
+              smooth={true}
+               className="mx-4 cursor-pointer">
                 Pricing
-              </a>
+              </Link>
               <a 
                
-              href="#analytics" className="mx-4">
+              href="#analytics" className="mx-4 cursor-pointer">
                 Analytics
               </a>
-              <a 
+              <Link
                
-              href="#faq" className="ml-4">
+              to="faq"
+              spy={true}  
+              smooth={true}
+              offset={50}
+               className="ml-4 cursor-pointer">
                 FAQs
-              </a>
+              </Link>
             </nav>
 
             <nav>
-              <a href="/Login" className="text-blue-500 mr-2">
+              <Link 
+              to="Login" 
+              spy={true}  
+              smooth={true}
+              className="text-blue-500 mr-2 cursor-pointer">
                 Log in
-              </a>
+              </Link>
 
               {/* <motion.button className="mx-3 rounded-full border border-primaryBlue text-primaryBlue hover:bg-primaryBlue hover:text-white  text-sm font-medium py-2.5 px-6"
           whileHover={{

@@ -9,11 +9,7 @@ const Pricing = () => {
       id="pricing"
       className="w-full flex flex-col items-center self-center mt-[80px]"
     >
-      {/* <div className="flex flex-col justify-center items-center mt-5 h-20">
-        <div className=" bg-blue-600" />
-        <div className="w-2 h-96 black-gradient" />
-      </div> */}
-
+      
       <h1 className=" items-center !text-5xl font-semibold">
         A <span className="text-blue-600">price perfect</span> for your needs.
       </h1>
@@ -54,6 +50,7 @@ const Pricing = () => {
                       Basic Link Analytics
                     </div>
                   </div>
+                  
                   <div className="frame-5One">
                     <img
                       className="check-circle-2One"

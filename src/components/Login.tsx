@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "boxicons"
 const Login = () => {
   return (
-    <section className="container forms">
+    <section className="containers forms" id='Login'>
             <div className="form login">
                 <div className="form-content">
                     <header>Login</header>
@@ -14,6 +14,8 @@ const Login = () => {
 
                         <div className="field input-field">
                             <input type="password" className="input" placeholder="Password" />
+                            
+                            <i className='bx bx-hide eye-icon' />
                         </div>
 
                         <div className='form-link'>
@@ -30,8 +32,31 @@ const Login = () => {
                           </span>
                         </div>
                     </form>
+                    
                 </div>
+                <div className='line'></div>
+                
             </div>
+
+            
+
+            
+              <div className='media-options'>
+                <a href="#" className='field facebook'>
+                  <i className='bx bxl-facebook facebook-icon'>
+                    <span>Login With Facebook</span>
+                  </i>
+                </a>
+              </div>
+
+              <div className='media-options'>
+                <a href="#" className='field google'>
+                  <img src='images/google.png' alt='google' className='google-img' />
+                    <span>Login With Google</span>
+                  
+                </a>
+              </div>
+            
         </section>
   )
 }
