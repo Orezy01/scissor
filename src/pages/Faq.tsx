@@ -94,8 +94,7 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-            {/* <img className="groupTwo" alt="Group" src="group-3.png" />
-            <img className="group-2Two" alt="Group" src="group-2.png" /> */}
+            
           </div>
         </div>
       </div>
@@ -106,13 +105,13 @@ const Faq = () => {
         <div className="boxThree">
       <div className="rectangle-wrapperThree">
         
-        <div className="rectangleThree justify-center items-center gap-4" >
+        {/* <div className="rectangleThree justify-center items-center gap-4" >
           <div className="inline-flex flex-col items-center gap-[32px]">
           <h1 className="text-white text-5xl  font-semibold flex w-[806px] h-[57px] flex-col">Revolutionizing Link Optimization</h1>
         <button className=" flex w-[200px] h-[48px] items-center  bg-primaryBlue text-white border rounded-full py-[12px] px-[24px]">ljll</button>
           </div>
         
-        </div>
+        </div> */}
         
 
       </div>

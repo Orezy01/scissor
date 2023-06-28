@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 // import LineTwo from "../images/Line 70.png"
@@ -19,15 +20,13 @@ const MyUrls = () => {
         reinforce your brand presence and enhance user engagement.
       </p>
       <div className="flex items-center m-3">
-        <motion.button
-          className="rounded-full  border border-primaryBlue py-2.5 px-8  text-white focus:outline-none focus:z-10 bg-primaryBlue mr-4 text-sm font-medium hover:text-blue-500 hover:bg-white"
-          whileHover={{
-            y: -2,
-          }}
-          whileTap={{ scale: 0.9 }}
+        <Link
+          className="rounded-full  border border-primaryBlue py-2.5 px-8  text-white focus:outline-none focus:z-10 bg-primaryBlue mr-4 text-sm font-medium hover:text-blue-500 hover:bg-white cursor:pointer"
+          to="SignUp" 
+              
         >
           Sign Up
-        </motion.button>
+        </Link>
         <Link to="/LearnMore" className="text-primaryBlueBase text-sm ">
           Learn more
         </Link>
