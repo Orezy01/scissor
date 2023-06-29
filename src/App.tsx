@@ -28,10 +28,9 @@ function App() {
           <Qrcode />
         </div>
         <SignUp />
-      <Login />
-        
-      
-        <Footer /> 
+        <Login />
+
+        <Footer />
       </Layout>
     </main>
   );

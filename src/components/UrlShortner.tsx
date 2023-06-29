@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import InputShortener from "./InputShortener";
-import UrlShortenResult from "./UrlShortenResult";
-
-
+import InputShortener from "../components/InputShortener";
+import UrlShortenResult from "../components/UrlShortenResult";
 
 type Props = {};
 

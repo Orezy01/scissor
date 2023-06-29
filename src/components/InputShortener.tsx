@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import magicWand from "../images/magic wand.png";
 // import {
 //   Ripple,
 //   initTE,
@@ -18,27 +19,43 @@ const InputShortener = ({ setInputValue }: Props) => {
     setValue("");
   };
   return (
-    
-    
-    <div className="flex flex-col items-center box-border h-90 w-100 p-4  m8 " id="urlshort" data-testid="urlshort-1">
-      <h1 className="">Shorten your Url</h1>
-      <div>
-        <input
-          type="text "
-          placeholder="Paste URL here..."
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-          className="mt-1 px-2 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-        />
-        <br />
-        <button
-        onClick={handleClick}
-  type="button"
-  data-te-ripple-init
-  data-te-ripple-color="light"
-  className="inline-block rounded bg-sky px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-  Trim URL
-</button>
+    <div id="urlshort">
+      <div className="w-[1440px] h-[523px] flex justify-center items-center A-section mt-24">
+        <div className="inline-flex flex-col p-[42px] justify-center items-center gap-6 rounded-xl bg-white ">
+          <input
+            type="text"
+            placeholder="Paste URL here..."
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            className=" flex flex-col justify-center items-start gap-[10px] rounded-xl w-[392px] h-[55px] py-2 px-3 inputTxt placeholder:text-blue-300"
+          />
+          <div className="flex justify-center items-center gap-3">
+            <select className="flex w-[202px] h-[48px] items-center gap-[10px] rounded-xl inputTxt py-2 px-3 text-blue-300">
+              <option value="Demo Domain">Choose Domain</option>
+            </select>
+            <input
+              type=""
+              placeholder="Type Alias here"
+              className="flex w-[178px] h-[48px] flex-col justify-center items-start gap-[10px] inputTxt rounded-xl py-2 px-3 placeholder:text-blue-300"
+            />
+          </div>
+
+          <button
+            type="button"
+            onClick={handleClick}
+            className="flex w-[392px] py-3 px-6 justify-center items-center gap-[10px] btnTrim"
+          >
+            Trim URL
+            <img className="magicWand" src={magicWand} alt="magic wand" />
+          </button>
+          <p className="flex flex-col justify-center shrink-0 w-[373px] text-sm termsColor">
+            By clicking TrimURL, I agree to the{" "}
+            <span className=" font-semibold">
+              Terms of Service, Privacy Policy
+            </span>{" "}
+            and Use of Cookies.
+          </p>
+        </div>
       </div>
     </div>
   );

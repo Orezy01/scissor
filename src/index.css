@@ -4,12 +4,13 @@
 
 * {
   scroll-behavior: smooth;
+  font-family: "Gilroy-Medium-☞", Helvetica !important;
 }
 .glass {
-  backdrop-filter:  blur(10px);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.37);
-  background: 135deg, rgba(255,255,255,0.1), rgba(255,255,255,0);
+  background: 135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0);
 }
 .box {
   background-color: transparent;
@@ -452,7 +453,7 @@
 .boxOne .check-circle-2One {
   height: 16px;
   min-width: 16px;
-  position: relative;   
+  position: relative;
 }
 
 .boxOne .text-wrapper-4One {
@@ -525,24 +526,29 @@
   width: fit-content;
 }
 
-
 .middleCard {
-  background: var(--linear-gradient, linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%));
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
+  );
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
 }
 
 .A-section {
-  background: var(--linear-gradient, linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%));
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
+  );
 }
 
 .inputTxt {
-  border: 1px solid var(--primary-100, #3284FF);
+  border: 1px solid var(--primary-100, #3284ff);
 }
 
 .btnTrim {
   border-radius: 100px;
-  background: var(--primary-400, #005AE2);
-  color: white
+  background: var(--primary-400, #005ae2);
+  color: white;
 }
 
 .magicWand {
@@ -552,7 +558,7 @@
 }
 
 .termsColor {
-  color: #4991FF;
+  color: #4991ff;
 }
 
 /*Faq*/
@@ -1082,8 +1088,6 @@
   width: 374px;
 }
 
-
-
 /* blue rectangle section */
 .boxThree {
   background-color: transparent;
@@ -1100,7 +1104,11 @@
 }
 
 .boxThree .rectangleThree {
-  background: linear-gradient(180deg, rgb(30, 52, 72) 99.99%, rgba(30, 52, 72, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(30, 52, 72) 99.99%,
+    rgba(30, 52, 72, 0) 100%
+  );
   height: 400px;
   left: 0;
   /* position: fixed; */
@@ -1109,9 +1117,7 @@
 }
 
 .footersec {
-  background: var(--neutral-white, #FFF);
+  background: var(--neutral-white, #fff);
 }
 
-
 /* login page */
-

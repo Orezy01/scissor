@@ -5,7 +5,7 @@ import Minus from "../images/minus.png"
 
 const Faq = () => {
   return (
-    <div id="faq" className=" mt-2">
+    <div id="faq" className=" mt-2" data-testid="faq-1">
        <div className="boxTwo">
       <div className="FA-qs-wrapperTwo">
         <div className="FA-qsTwo">
